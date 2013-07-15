@@ -1,0 +1,83 @@
+commit 801b30b361a3bba3005ab0ae58a5634375d5c2d8
+Author: Ubuntu <ubuntu@ip-172-31-46-246.us-west-2.compute.internal>
+Date:   Mon Jul 15 13:38:37 2013 +0000
+
+    firstcommit
+
+commit 354dfc0628a9f0ed730a885630c4654bec94a09a
+Author: Dominic Boehler <dominic.boehler@gmx.de>
+Date:   Thu Jul 11 17:21:21 2013 +0200
+
+    removed unneeded console.logs
+
+commit 76fddd58af3d4f51abe06c3a4c5b4a34eef2e542
+Author: Dominic Boehler <dominic.boehler@gmx.de>
+Date:   Thu Jul 11 17:09:00 2013 +0200
+
+    Edited grader.js to take an url and attached further checks into checks.json
+
+commit 04152ac01af2baca6478884f3d391aa5b92e4ee8
+Author: Dominic Boehler <dominic.boehler@gmx.de>
+Date:   Wed Jul 10 22:29:43 2013 +0200
+
+    added skeleton of grader.js and check.json
+
+commit 7a4dab39a9a671a85273b55a75d0a5ec38c3d622
+Author: Dominic Boehler <dominic.boehler@gmx.de>
+Date:   Wed Jul 10 22:03:46 2013 +0200
+
+    format respectively set right intendation to index.html
+
+commit c18ac1abc13571e09a4f61efa4c926be98ccaa1f
+Author: Dominic Boehler <dominic.boehler@gmx.de>
+Date:   Wed Jul 10 21:58:19 2013 +0200
+
+    edited css to show properly
+
+commit 5348825c32ce9a4578da391751889ca6d2f75dc5
+Author: Dominic Boehler <dominic.boehler@gmx.de>
+Date:   Wed Jul 10 21:46:29 2013 +0200
+
+    Fix href link issue
+
+commit b1255874cbd3631df375a2860ac2f461bbc9c6a5
+Author: Dominic Boehler <dominic.boehler@gmx.de>
+Date:   Wed Jul 10 21:43:25 2013 +0200
+
+    Added complete skeleton
+
+commit 11694d1726e5651f4f978b4e18680e41977901f9
+Author: Dominic Boehler <dominic.boehler@gmx.de>
+Date:   Wed Jul 10 20:47:29 2013 +0200
+
+    Added index.html
+
+commit c92193d344d8413c29af33976d3dbe3e9893d97e
+Author: Dominic Boehler <dominic.boehler@gmx.de>
+Date:   Wed Jul 10 19:08:15 2013 +0200
+
+    Added index.html
+
+commit 4ec984bfad66ec06305389f48db7cba2389200c7
+Author: Dominic Boehler <dominic.boehler@gmx.de>
+Date:   Wed Jul 10 19:05:57 2013 +0200
+
+    Updated web.js
+
+commit cc02d1094f39fe8345a7fff972597b4da9c60a5d
+Author: Dominic Boehler <dominic.boehler@gmx.de>
+Date:   Wed Jul 10 19:02:49 2013 +0200
+
+    Hello World2!
+
+commit d09a71b0a5667d9cb4a03fb12e23e4e638fda892
+Author: Dominic Boehler <dominic.boehler@gmx.de>
+Date:   Wed Jul 10 18:38:46 2013 +0200
+
+    First Commit
+
+commit 63b0ed2e6dd29627f3d008c562f8278403d96b40
+Author: Dominic B <dominic.boehler@gmx.de>
+Date:   Wed Jul 10 08:25:03 2013 -0700
+
+    Initial commit
