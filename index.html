@@ -15,88 +15,103 @@
 	<link href='http://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
     <style type="text/css">
 
-      @media (min-width: 980px) { 
-        body {
-         padding-top: 60px;
-        }
-       .linediv-l {
-         border-right: 1px white solid;
-        }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
-      }
+	@media (min-width: 980px) { 
+		body {
+			padding-top: 60px;
+		}
+		.linediv-l {
+			border-right: 1px white solid;
+		}
+		.linediv-r {
+			border-left: 1px white solid;
+		}
+	}
 
-      @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
-      }
+	@media (max-width: 480px) { 
+		.copy {
+			padding: 2.5% 10%;
+		}
+		.linediv-l {
+			border-bottom: 1px white solid;
+		}
+		.linediv-r {
+			border-top: 1px white solid;
+		}
+	}
 
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
-        font-family: 'Graduate', cursive;
-        text-align: center;
+	body{
+		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	}
+	.heading, .subheading {
+		font-family: 'Graduate', cursive;
+		text-align: center;
 		color: #2C1D91;
 		text-shadow: 1px 1px #c0c0c0;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
+	}
+	p.lead {
+		padding-top: 1.5%;
+		font-size: 24px;
+		line-height: 30px;
+	}
+	p {
+		font-size: 18px;
+		line-height: 24px;
+	}
 
-      .pitch {
-        padding: 2.5% 0%;
-      }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
+	.pitch {
+		padding: 2.5% 0%;
+	}
+	.order {
+		padding: 2% 0%;
+	}
+	.actions {
+		background-color: #343434;
+		padding: 3% 0%;
+	}
+		.video, .thermometer, .order, .social, .statistics {
+		text-align: center;
+	}
+		.statistics h3, .statistics p {
+		color: white;
+	}
 
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
-      }
-      .asset {
-        padding: 2.5% 0%;
-      }
-      .footer {
-        color: #cccccc;
-        text-align: center;
-      }
-      .footer p {
-        font-size: 11px;
-      }
-      .footer a {
-        color: #ccccff;
-      }
+	.copy {
+		padding-top: 2.5%;
+		padding-bottom: 2.5%;
+		text-align: justify;
+	}
+	.asset {
+		padding: 2.5% 0%;
+	}
+	.footer {
+		color: #cccccc;
+		text-align: center;
+	}
+	.footer p {
+		font-size: 11px;
+	}
+	.footer a {
+		color: #ccccff;
+	}
+	::-moz-selection {
+		background: #ccd8fc;
+		text-shadow: none;
+	}
+	::selection {
+		background: #ccd8fc;
+		text-shadow: none;
+	}
+	.panel{
+		border-radius: 10px;
+		border: none;
+		box-shadow: 0 0 8px 2px rgba(0,0,0,0.1);
+	}
     </style>
   </head>
   <body>
 
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -113,12 +128,18 @@
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-          </div>
+          </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
+    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
+      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
           <h1>Overseer</h1>
@@ -126,20 +147,27 @@
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
+          <!-- Special typography from Bootstrap for lead paragraph. -->
+          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
           <p class="lead">Always have an eye on your valuables.</p>
         </div>
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://i.imgur.com/Wg2ni8E.jpg?1" alt="zeug">
+          <img class="img-polaroid" src="http://i.imgur.com/Wg2ni8E.jpg?1" alt="The Overseer Watchdrone">
         </div>
 
-        <div class="span5 actions">
+        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+        <div class="span5 actions panel">
+          <div class="row-fluid">
           <div class="span8 offset2">
-            <div class="statistics">
+            <div class="row-fluid statistics">
               <div class="span4">
+                <!-- linediv-l and linediv-r give dividing lines that look
+                different in horizontal and vertical layouts, illustrating
+                media queries. -->
                 <div class="linediv-l">
-                <h3>0</h3> <p>backers</p>
+                <h3>1000</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
@@ -154,29 +182,46 @@
               </div>
             </div>
           </div>
+          <div class="row-fluid">
           <div class="span10 offset1">
+            <!-- Bootstrap progress bar -->
+            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 0%;"></div>
-              <div class="bar bar-warning" style="width: 100%;"></div>
+              <div class="bar bar-success" style="width: 60%;"></div>
+              <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span6 offset3 order">
+            <!-- Standard Bootstrap button. -->
+            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span8 offset2 social">
+            <!-- Social buttons are not included in default Bootstrap. -->
+            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
+          </div>
+        </div>
         </div>
       </div>
 
+      <!-- Beyond this part the marketing copy begins. -->
+      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+      <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://i.imgur.com/ZzamGiw.jpg?1">
+          <img class="img-polaroid" src="http://i.imgur.com/ZzamGiw.jpg?1" alt="Watchdrone camera">
         </div>
-        <div class="span5 copy">
+        <div class="span5 copy panel">
           <p>
-			Overseer is the new standard when it comes to your security. 
+            Overseer is the new standard when it comes to your security. 
 			You	have a warehouse, a storage facility or property in general 
 			that needs protection? Overseer is the efficent solution for your
 			security problem. With the Overseer Watchdrones you do not need
@@ -190,8 +235,8 @@
       </div>
 
       <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
+        <div class="span5 offset1 copy copy-right panel">
+            <p>
 			Each of our Watchdrones is based on the Parrot AR.Drone 2.0 and commes
 			with a number of additional features.
 		  </p>
@@ -208,10 +253,13 @@
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://i.imgur.com/HtP02o3.jpg?1">
+          <img class="img-polaroid" src="http://i.imgur.com/HtP02o3.jpg?1" alt="Watch your property">
         </div>
       </div>
 
+      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
       <div class="row-fluid faq">
           <div class="span10 offset1">
             <h3>FAQ</h3>
@@ -234,6 +282,8 @@
 
       </div>
 
+      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+      <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
           <p>This work is licensed under
